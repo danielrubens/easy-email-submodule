@@ -1,6 +1,6 @@
-import { MjmlToJson } from "easy-email-core";
+// import { MjmlToJson } from "easy-email-core";
 import { IEmailTemplate } from "easy-email-editor";
-import { Uploader } from "../urils/Uploader";
+import { Uploader } from "../utils/Uploader";
 
 
 const uploader = new Uploader(async () => (''), {
@@ -22,8 +22,9 @@ export function useImportTemplate() {
           return;
         }
         try {
-          const pageData = MjmlToJson(evt.target.result as any);
-          resolve([file.name, pageData]);
+          // const pageData = MjmlToJson(evt.target.result as any);
+          console.log('to update')
+          // resolve([file.name, pageData]);
         } catch (error) {
           reject()
         }

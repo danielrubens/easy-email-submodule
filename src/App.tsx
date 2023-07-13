@@ -15,7 +15,7 @@ import 'antd/dist/antd.css';
 import templateData from './template.json'
 import { useImportTemplate } from './hooks/useImportTemplate';
 import { useExportTemplate } from './hooks/useExportTemplate';
-import { copy } from './urils/clipboard';
+import { copy } from './utils/clipboard';
 import { AdvancedType, JsonToMjml } from 'easy-email-core';
 import { ExtensionProps, StandardLayout } from 'easy-email-extensions';
 import { FormApi } from 'final-form';
